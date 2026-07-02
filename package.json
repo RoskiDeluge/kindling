@@ -1,0 +1,19 @@
+{
+  "name": "kindling",
+  "version": "0.1.0",
+  "description": "Pull your Kindle highlights from read.amazon.com/notebook into Markdown files",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "kindling": "src/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "playwright": "^1.45.0"
+  }
+}

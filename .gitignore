@@ -1,0 +1,6 @@
+node_modules/
+
+# Personal exported highlights — never publish these
+*.md
+!README.md
+.kindling-manifest.json
