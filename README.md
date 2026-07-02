@@ -15,7 +15,7 @@ npx playwright install chromium
 # Export into a specific directory
 node src/index.js ~/notes/kindle
 
-# Or into the current working directory
+# Or into ./highlights (the default)
 node src/index.js
 ```
 

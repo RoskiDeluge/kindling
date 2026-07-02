@@ -11,7 +11,7 @@ Usage:
   kindling [output-dir] [options]
 
 Arguments:
-  output-dir          Directory to write one .md file per book (default: current directory)
+  output-dir          Directory to write one .md file per book (default: ./highlights)
 
 Options:
   --base-url <url>    Kindle notebook base URL (default: https://read.amazon.com)
@@ -25,7 +25,11 @@ Notes:
 `;
 
 function parseArgs(argv) {
-  const opts = { outDir: process.cwd(), baseUrl: "https://read.amazon.com", freshLogin: false };
+  const opts = {
+    outDir: path.join(process.cwd(), "highlights"),
+    baseUrl: "https://read.amazon.com",
+    freshLogin: false,
+  };
   const args = [...argv];
   while (args.length) {
     const arg = args.shift();

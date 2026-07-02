@@ -42,9 +42,8 @@ Published at https://github.com/RoskiDeluge/kindling (MIT).
 
 ### Git Workflow
 - Single `main` branch, direct commits, descriptive commit messages.
-- `.gitignore` blocks root-level `*.md` (except README.md and AGENTS.md) and
-  `.kindling-manifest.json` because exports default to the repo root and contain
-  personal reading data.
+- `.gitignore` blocks `highlights/` (the default export directory) and
+  `.kindling-manifest.json` because exports contain personal reading data.
 
 ## Domain Context
 - Amazon notebook DOM is undocumented and can change; key selectors live in
