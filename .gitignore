@@ -1,6 +1,7 @@
 node_modules/
 
-# Personal exported highlights — never publish these
-*.md
-!README.md
+# Personal exported highlights (written to the repo root) — never publish these
+/*.md
+!/README.md
+!/AGENTS.md
 .kindling-manifest.json
